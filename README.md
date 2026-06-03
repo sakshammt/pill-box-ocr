@@ -3,6 +3,7 @@
 ## UBA Mission Government Internship Project
 
 A modern web application that helps users manage their medication schedule by scanning medicine packages using OCR (Optical Character Recognition) technology.
+Live demo @ pillbococr.netlify.app
 
 ## Features
 
@@ -71,51 +72,6 @@ A modern web application that helps users manage their medication schedule by sc
    - Audio beep will play to alert you
    - Dismiss the alarm after taking your medication
 
-## Installation & Development
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-## 🚀 Quick Deployment
-
-### Fastest Method (30 seconds):
-```bash
-npm run build
-# Then go to https://app.netlify.com/drop and drag the 'dist' folder
-```
-
-### One-Command Deployments:
-```bash
-npm run deploy:vercel    # Deploy to Vercel
-npm run deploy:netlify   # Deploy to Netlify
-npm run deploy:gh-pages  # Deploy to GitHub Pages
-```
-
-### Using Helper Scripts:
-```bash
-./deploy.sh    # Mac/Linux
-deploy.bat     # Windows
-```
-
-**See [DEPLOYMENT_QUICK.md](./DEPLOYMENT_QUICK.md) for detailed deployment guide.**
-
-## Browser Requirements
-
-- Modern browser with camera access support
-- JavaScript enabled
-- LocalStorage enabled for data persistence
-- Microphone/Audio permissions for alarm sounds
 
 ## Project Structure
 
