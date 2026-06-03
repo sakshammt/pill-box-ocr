@@ -3,7 +3,7 @@
 ## UBA Mission Government Internship Project
 
 A modern web application that helps users manage their medication schedule by scanning medicine packages using OCR (Optical Character Recognition) technology.
-Live demo @ pillbococr.netlify.app
+Live demo @ pillboxcocr.netlify.app
 
 ## Features
 
