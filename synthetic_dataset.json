@@ -1,0 +1,489 @@
+{
+  "dataset_info": {
+    "name": "MediCare Synthetic Dataset",
+    "version": "1.0.0",
+    "description": "Realistic synthetic data for medication reminder application testing",
+    "created_date": "2026-01-15",
+    "total_records": 100,
+    "purpose": "Testing, demonstration, and validation of MediCare application",
+    "data_privacy": "All data is synthetic and does not represent real patients"
+  },
+  
+  "medicine_names": [
+    "Paracetamol 500mg",
+    "Ibuprofen 400mg",
+    "Amoxicillin 250mg",
+    "Metformin 850mg",
+    "Aspirin 75mg",
+    "Omeprazole 20mg",
+    "Atorvastatin 10mg",
+    "Lisinopril 5mg",
+    "Levothyroxine 50mcg",
+    "Amlodipine 5mg",
+    "Simvastatin 20mg",
+    "Ramipril 2.5mg",
+    "Cetirizine 10mg",
+    "Montelukast 10mg",
+    "Pantoprazole 40mg",
+    "Losartan 50mg",
+    "Clopidogrel 75mg",
+    "Ciprofloxacin 500mg",
+    "Azithromycin 250mg",
+    "Doxycycline 100mg",
+    "Prednisone 5mg",
+    "Insulin Glargine 100U/ml",
+    "Gabapentin 300mg",
+    "Sertraline 50mg",
+    "Escitalopram 10mg",
+    "Alprazolam 0.25mg",
+    "Zolpidem 10mg",
+    "Diazepam 5mg",
+    "Tramadol 50mg",
+    "Codeine 30mg",
+    "Salbutamol Inhaler 100mcg",
+    "Budesonide Inhaler 200mcg",
+    "Vitamin D3 1000IU",
+    "Calcium Carbonate 500mg",
+    "Folic Acid 5mg",
+    "Iron Supplement 65mg",
+    "Vitamin B12 1000mcg",
+    "Omega-3 Fish Oil 1000mg",
+    "Multivitamin Daily",
+    "Biotin 5000mcg"
+  ],
+
+  "sample_medications": [
+    {
+      "id": "1704892800000",
+      "name": "Paracetamol 500mg",
+      "scheduledTime": "08:00",
+      "scheduledDate": "2026-01-20",
+      "createdAt": 1704892800000,
+      "notified": false,
+      "dosage": "500mg",
+      "frequency": "Twice daily",
+      "notes": "Take with food",
+      "category": "Pain Relief"
+    },
+    {
+      "id": "1704893100000",
+      "name": "Metformin 850mg",
+      "scheduledTime": "09:00",
+      "scheduledDate": "2026-01-20",
+      "createdAt": 1704893100000,
+      "notified": false,
+      "dosage": "850mg",
+      "frequency": "Once daily",
+      "notes": "Take with breakfast",
+      "category": "Diabetes"
+    },
+    {
+      "id": "1704893400000",
+      "name": "Aspirin 75mg",
+      "scheduledTime": "20:00",
+      "scheduledDate": "2026-01-20",
+      "createdAt": 1704893400000,
+      "notified": false,
+      "dosage": "75mg",
+      "frequency": "Once daily",
+      "notes": "Evening dose",
+      "category": "Cardiovascular"
+    },
+    {
+      "id": "1704893700000",
+      "name": "Omeprazole 20mg",
+      "scheduledTime": "07:30",
+      "scheduledDate": "2026-01-21",
+      "createdAt": 1704893700000,
+      "notified": false,
+      "dosage": "20mg",
+      "frequency": "Once daily",
+      "notes": "30 minutes before breakfast",
+      "category": "Gastric"
+    },
+    {
+      "id": "1704894000000",
+      "name": "Atorvastatin 10mg",
+      "scheduledTime": "22:00",
+      "scheduledDate": "2026-01-21",
+      "createdAt": 1704894000000,
+      "notified": false,
+      "dosage": "10mg",
+      "frequency": "Once daily",
+      "notes": "Take at bedtime",
+      "category": "Cholesterol"
+    }
+  ],
+
+  "user_scenarios": [
+    {
+      "scenario_id": "S001",
+      "user_profile": "Elderly diabetic patient",
+      "age": 68,
+      "conditions": ["Type 2 Diabetes", "Hypertension"],
+      "medications": [
+        {
+          "name": "Metformin 850mg",
+          "time": "08:00",
+          "frequency": "Twice daily",
+          "adherence_rate": 0.92
+        },
+        {
+          "name": "Lisinopril 5mg",
+          "time": "08:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.95
+        },
+        {
+          "name": "Aspirin 75mg",
+          "time": "20:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.88
+        }
+      ],
+      "total_medications": 3,
+      "average_adherence": 0.92
+    },
+    {
+      "scenario_id": "S002",
+      "user_profile": "Young adult with anxiety",
+      "age": 28,
+      "conditions": ["Generalized Anxiety Disorder"],
+      "medications": [
+        {
+          "name": "Escitalopram 10mg",
+          "time": "09:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.85
+        },
+        {
+          "name": "Alprazolam 0.25mg",
+          "time": "14:00",
+          "frequency": "As needed",
+          "adherence_rate": 0.70
+        }
+      ],
+      "total_medications": 2,
+      "average_adherence": 0.78
+    },
+    {
+      "scenario_id": "S003",
+      "user_profile": "Middle-aged cardiac patient",
+      "age": 55,
+      "conditions": ["Coronary Artery Disease", "High Cholesterol"],
+      "medications": [
+        {
+          "name": "Atorvastatin 10mg",
+          "time": "22:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.97
+        },
+        {
+          "name": "Clopidogrel 75mg",
+          "time": "08:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.96
+        },
+        {
+          "name": "Amlodipine 5mg",
+          "time": "08:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.94
+        },
+        {
+          "name": "Aspirin 75mg",
+          "time": "20:00",
+          "frequency": "Once daily",
+          "adherence_rate": 0.93
+        }
+      ],
+      "total_medications": 4,
+      "average_adherence": 0.95
+    }
+  ],
+
+  "ocr_test_data": [
+    {
+      "image_type": "Clear box front",
+      "medicine_name": "Paracetamol 500mg",
+      "ocr_input": "PARACETAMOL\n500mg Tablets\n16 Tablets\nPain Relief",
+      "expected_output": "Paracetamol 500mg",
+      "ocr_confidence": 0.95,
+      "preprocessing_applied": true
+    },
+    {
+      "image_type": "Blister pack",
+      "medicine_name": "Metformin 850mg",
+      "ocr_input": "Metformin Hydrochloride\n850 mg\nFilm-coated Tablets",
+      "expected_output": "Metformin 850mg",
+      "ocr_confidence": 0.88,
+      "preprocessing_applied": true
+    },
+    {
+      "image_type": "Prescription bottle",
+      "medicine_name": "Lisinopril 5mg",
+      "ocr_input": "LISINOPRIL\n5MG TABLETS\nQTY: 30",
+      "expected_output": "Lisinopril 5mg",
+      "ocr_confidence": 0.92,
+      "preprocessing_applied": true
+    },
+    {
+      "image_type": "Box with poor lighting",
+      "medicine_name": "Omeprazole 20mg",
+      "ocr_input": "0mepraz0le\n2Omg\nGastro-resistant Capsules",
+      "expected_output": "Omeprazole 20mg",
+      "ocr_confidence": 0.72,
+      "preprocessing_applied": true,
+      "common_errors": ["0 instead of O", "Spacing issues"]
+    },
+    {
+      "image_type": "Angled photo",
+      "medicine_name": "Aspirin 75mg",
+      "ocr_input": "ASP|R|N\n75 mg\nEnteric-coated",
+      "expected_output": "Aspirin 75mg",
+      "ocr_confidence": 0.68,
+      "preprocessing_applied": true,
+      "common_errors": ["| instead of I", "Perspective distortion"]
+    }
+  ],
+
+  "medication_schedules": [
+    {
+      "schedule_type": "Morning medications",
+      "time": "08:00",
+      "medications": [
+        "Metformin 850mg",
+        "Lisinopril 5mg",
+        "Levothyroxine 50mcg",
+        "Vitamin D3 1000IU"
+      ],
+      "typical_users": "Elderly, chronic disease patients",
+      "adherence_challenges": "Forgetting after waking up"
+    },
+    {
+      "schedule_type": "Evening medications",
+      "time": "20:00",
+      "medications": [
+        "Atorvastatin 10mg",
+        "Aspirin 75mg",
+        "Ramipril 2.5mg"
+      ],
+      "typical_users": "Cardiac patients",
+      "adherence_challenges": "Busy evening routines"
+    },
+    {
+      "schedule_type": "Before meals",
+      "time": "07:30",
+      "medications": [
+        "Omeprazole 20mg",
+        "Pantoprazole 40mg"
+      ],
+      "typical_users": "GERD patients",
+      "adherence_challenges": "Timing with meals"
+    },
+    {
+      "schedule_type": "Bedtime medications",
+      "time": "22:00",
+      "medications": [
+        "Zolpidem 10mg",
+        "Simvastatin 20mg"
+      ],
+      "typical_users": "Insomnia, high cholesterol patients",
+      "adherence_challenges": "Irregular sleep schedules"
+    }
+  ],
+
+  "alarm_test_cases": [
+    {
+      "test_id": "ALM001",
+      "medication": "Paracetamol 500mg",
+      "scheduled_time": "14:30:00",
+      "scheduled_date": "2026-01-20",
+      "expected_trigger_time": "2026-01-20T14:30:00",
+      "trigger_window": "14:30:00 to 14:31:00",
+      "alarm_type": "Audio + Visual",
+      "test_status": "Pass"
+    },
+    {
+      "test_id": "ALM002",
+      "medication": "Metformin 850mg",
+      "scheduled_time": "09:00:00",
+      "scheduled_date": "2026-01-21",
+      "expected_trigger_time": "2026-01-21T09:00:00",
+      "trigger_window": "09:00:00 to 09:01:00",
+      "alarm_type": "Audio + Visual",
+      "test_status": "Pass"
+    },
+    {
+      "test_id": "ALM003",
+      "medication": "Aspirin 75mg",
+      "scheduled_time": "20:00:00",
+      "scheduled_date": "2026-01-21",
+      "expected_trigger_time": "2026-01-21T20:00:00",
+      "trigger_window": "20:00:00 to 20:01:00",
+      "alarm_type": "Audio + Visual",
+      "test_status": "Pass"
+    }
+  ],
+
+  "usage_statistics": {
+    "total_users": 1250,
+    "total_medications_tracked": 4800,
+    "average_medications_per_user": 3.84,
+    "ocr_success_rate": 0.87,
+    "manual_edit_rate": 0.23,
+    "alarm_trigger_accuracy": 0.98,
+    "user_adherence_improvement": 0.34,
+    "average_session_duration": "3.5 minutes",
+    "daily_active_users": 890,
+    "weekly_active_users": 1100
+  },
+
+  "common_medications_by_condition": {
+    "Diabetes": [
+      "Metformin 850mg",
+      "Insulin Glargine 100U/ml",
+      "Glimepiride 2mg",
+      "Sitagliptin 100mg"
+    ],
+    "Hypertension": [
+      "Lisinopril 5mg",
+      "Amlodipine 5mg",
+      "Losartan 50mg",
+      "Ramipril 2.5mg"
+    ],
+    "High Cholesterol": [
+      "Atorvastatin 10mg",
+      "Simvastatin 20mg",
+      "Rosuvastatin 10mg"
+    ],
+    "Pain Relief": [
+      "Paracetamol 500mg",
+      "Ibuprofen 400mg",
+      "Tramadol 50mg"
+    ],
+    "Anxiety/Depression": [
+      "Sertraline 50mg",
+      "Escitalopram 10mg",
+      "Alprazolam 0.25mg"
+    ]
+  },
+
+  "time_slot_distribution": {
+    "06:00-09:00": {
+      "percentage": 35,
+      "typical_medications": "Morning medications, diabetes drugs, thyroid medications"
+    },
+    "09:00-12:00": {
+      "percentage": 15,
+      "typical_medications": "Mid-morning supplements, as-needed medications"
+    },
+    "12:00-15:00": {
+      "percentage": 10,
+      "typical_medications": "Afternoon medications, pain relief"
+    },
+    "15:00-18:00": {
+      "percentage": 8,
+      "typical_medications": "Afternoon supplements"
+    },
+    "18:00-21:00": {
+      "percentage": 22,
+      "typical_medications": "Evening medications, cardiovascular drugs"
+    },
+    "21:00-00:00": {
+      "percentage": 10,
+      "typical_medications": "Bedtime medications, sleep aids, statins"
+    }
+  },
+
+  "error_scenarios": [
+    {
+      "error_type": "OCR failure",
+      "frequency": "13% of scans",
+      "causes": ["Poor lighting", "Blurry image", "Small text"],
+      "user_action": "Manual entry",
+      "resolution_time": "30 seconds"
+    },
+    {
+      "error_type": "Camera permission denied",
+      "frequency": "5% of first-time users",
+      "causes": ["Privacy concerns", "Browser settings"],
+      "user_action": "Use file upload",
+      "resolution_time": "10 seconds"
+    },
+    {
+      "error_type": "Missed alarm",
+      "frequency": "2% of scheduled alarms",
+      "causes": ["Browser tab closed", "Device asleep"],
+      "user_action": "Manual reminder check",
+      "resolution_time": "N/A"
+    }
+  ],
+
+  "demographic_distribution": {
+    "age_groups": {
+      "18-30": {
+        "percentage": 12,
+        "common_conditions": ["Anxiety", "Depression", "Allergies"],
+        "avg_medications": 1.8
+      },
+      "31-50": {
+        "percentage": 28,
+        "common_conditions": ["Hypertension", "Diabetes", "Pain"],
+        "avg_medications": 2.5
+      },
+      "51-70": {
+        "percentage": 42,
+        "common_conditions": ["Cardiovascular", "Diabetes", "Arthritis"],
+        "avg_medications": 4.2
+      },
+      "70+": {
+        "percentage": 18,
+        "common_conditions": ["Multiple chronic conditions"],
+        "avg_medications": 6.5
+      }
+    },
+    "gender_distribution": {
+      "male": 0.48,
+      "female": 0.52
+    }
+  },
+
+  "sample_weekly_schedule": {
+    "user_id": "U12345",
+    "week_starting": "2026-01-20",
+    "medications": [
+      {
+        "day": "Monday",
+        "date": "2026-01-20",
+        "schedule": [
+          {"time": "08:00", "medication": "Metformin 850mg", "taken": true},
+          {"time": "08:00", "medication": "Lisinopril 5mg", "taken": true},
+          {"time": "20:00", "medication": "Atorvastatin 10mg", "taken": true},
+          {"time": "20:00", "medication": "Aspirin 75mg", "taken": false}
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "date": "2026-01-21",
+        "schedule": [
+          {"time": "08:00", "medication": "Metformin 850mg", "taken": true},
+          {"time": "08:00", "medication": "Lisinopril 5mg", "taken": true},
+          {"time": "20:00", "medication": "Atorvastatin 10mg", "taken": true},
+          {"time": "20:00", "medication": "Aspirin 75mg", "taken": true}
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "date": "2026-01-22",
+        "schedule": [
+          {"time": "08:00", "medication": "Metformin 850mg", "taken": true},
+          {"time": "08:00", "medication": "Lisinopril 5mg", "taken": false},
+          {"time": "20:00", "medication": "Atorvastatin 10mg", "taken": true},
+          {"time": "20:00", "medication": "Aspirin 75mg", "taken": true}
+        ]
+      }
+    ],
+    "weekly_adherence_rate": 0.92
+  }
+}
